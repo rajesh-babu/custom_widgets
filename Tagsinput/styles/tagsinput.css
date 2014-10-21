@@ -1,0 +1,21 @@
+div.tagsinput{
+	border: 1px solid #CCC;
+	background: #FFF;
+	padding: 10px;
+	
+}
+div.tagsinput span.tag{
+	border: 1px solid #a5d24a;
+	border-radius: 4px;
+	background: #cde69c;
+	padding: 5px;
+	color: #638421;
+	margin-right: 5px;
+}
+#add_tag input, #add_tag input:focus{
+	border: none;
+	outline: none;
+}
+#add_tag{
+	display: inline-block;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+	<script src="js/libs/jquery-1.10.2.js"></script>
+	<script src="js/libs/jquery.mobile-1.4.4.min.js"></script>
+	<script src="js/app.js"></script>
+    <title>9 Dot Pattern Lock</title>
+	<link rel="stylesheet" href="Styles/jquery.mobile-1.4.4.min.css" />
+	<link rel="stylesheet" type="text/css" href="Styles/main.css"></link>
+
+    <!--[if lt IE 9]> HTML5Shiv
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<script>
+		$(document).ready( function(){
+			  $("#pwd").dotpattern({patternCheck: 'patChkbox'});
+			  $('#patChkbox').click(function(){
+				if(!$(this).is(':checked')){
+					$('#pwd').attr('placeholder', 'Enter your password');
+				}else{
+					$('#pwd').attr('placeholder', 'Password through pattern');
+				}
+			});
+		});		
+	</script>
+</head>
+<body>
+    <div id="main" role="main">
+		<h3 class="loginTitle"> Login</h3>
+		<label >User Name: </label><input id="uname" type="text" placeholder="User Name"></input>
+		<div>
+			<label class="patternChkAdjLabel" >Password: </label><label ><input id="patChkbox" type="checkbox" checked="checked" />Pattern Lock</label>
+		</div>
+		<div>
+			<input id="pwd" type="text" placeholder="Password through pattern"></input>			
+		</div>
+		<input type="submit" value="submit"></input>
+	</div>
+</body>
+</html>
