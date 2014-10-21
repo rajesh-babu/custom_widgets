@@ -1,4 +1,4 @@
-URLs:
+I created the following html custom widgets, The demo URLs are
 
 Tags Input: http://rajesh-babu.github.io/custom_widgets/Tagsinput/Tagsinput.html
 
