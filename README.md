@@ -8,6 +8,8 @@ Super Accordion: http://rajesh-babu.github.io/custom_widgets/superAccordion/supe
 
 Image Protector: http://rajesh-babu.github.io/custom_widgets/ImageProtector.html
 
+Canvas Animation: http://rajesh-babu.github.io/custom_widgets/canvas_animation/index.html
+
 1)Tagsinput
 =========
 
