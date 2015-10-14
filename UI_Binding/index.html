@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>UI Data Binding</title>
+<!--Polyfill for Object.observe-->
+<script src="js/object-observe.min.js" /></script>
+</head>
+<body>
+Dear <span class="CustomBind" data-CustomBind='jsonPersonalData.first_name:User'></span>&nbsp;<span class="CustomBind" data-CustomBind='jsonPersonalData.middle_name:defaultText'></span>&nbsp;<span class="CustomBind" data-CustomBind='jsonPersonalData.last_name'></span>
+<script>
+	/*fw team will update the below properties on page init*/
+	var jsonPersonalData  = {
+    first_name: "Rajesh",
+    middle_name: "",
+    last_name: "Thoghuluva"
+};
+</script>
+<script src="js/main.js" /></script>
+</body>
+</html>
