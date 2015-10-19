@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Almond example</title>
+    <script src="js/almond.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+        require(['foo', 'bar', 'baz'], function(foo, bar, baz) {
+
+			console.log('foo: '+foo.name);
+			console.log('bar: '+bar.name);
+			console.log('baz: '+baz.name);
+			baz.callIt(function (bar) {
+                console.log('baz-bar: '+bar.name);
+			});
+			
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>
